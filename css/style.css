@@ -45,7 +45,7 @@ h1, h2, h3, h4{
     grid-area: sidebar;
     
 }
-#sidebar  img:first-child{
+#sidebar>img:nth-child(1){
     /* clip-path: circle(); */
     border-radius: 50%;
     
@@ -61,6 +61,55 @@ h1, h2, h3, h4{
     margin-left: auto;
     margin-right: auto;
 }
+#sidebar>h3 {
+    text-align: center;
+    color:white;
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+#sidebar>p {
+    color: white;
+    text-align: center;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: #9a9abe;
+    opacity: 1;
+    font-size: 14px;;
+    /* font: normal normal normal 14px/18px ; */
+    /* font-family: "Open Sans"; */
+    /* font-family: "Open Sans"; */
+}
+
+#sidebar img {
+    
+}
+
+.dashboard-content {
+    display: flex;
+    flex-direction: column;
+    color: #9a9abe;
+    font: normal normal bold 14px/18px Open Sans;
+    text-transform: uppercase;
+    padding-top: 40px;
+}
+#dashboard-content-flex-first {
+    border-left: 5px solid #60d91a;
+    color: #60d91a;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
 
 #upperInfo{
     grid-area: upperInfo;
@@ -75,7 +124,7 @@ h1, h2, h3, h4{
     margin: 1.5em;
     margin-top: 0%;;
     padding: .5em;
-    justify-content: center;
+    /* justify-content: center; */
     text-align: left;
     border-radius: 10px;
     height: 120px;
@@ -84,18 +133,37 @@ h1, h2, h3, h4{
     /* color: white; */
     /* font-size:  32px Open-Sans; */
     font-family: "Open Sans", sans-serif;
+    /* display:inline-block; */
     
-    
+}
+.card i{
+    /* display: inline-block; */
+    /* float:right; */
+    /* justify-content: center; */
 }
 
 .myBtn{
+    margin: auto;
+    text-align: center;
     background-color: #0062FF;
     margin: 1.5em;
-    justify-content: center;
-    text-align: center;
+    /* justify-content: center; */
+    /* text-align: center; */
     border-radius: 100px;
     height: 40px;
     box-shadow: 0px 10px 20px #0062ff4d;
+    font: normal normal normal 14px/40px Montserrat;
+    color: #ffffff;
+}
+.myBtnInactive {
+    margin: auto;
+    text-align: center;
+    background: #e8ecf1 0% 0% no-repeat padding-box;
+    margin: 1.5em; 
+    border-radius: 100px;
+    height: 40px;
+    font: normal normal normal 14px/40px Montserrat;
+    color: #728391;
 }
 
 
@@ -131,6 +199,9 @@ h1, h2, h3, h4{
 .workshop-info{
     grid-area: workshop-info;
     margin-left: 8%;
+}
+.workshop-status{
+    display:inline-flex;
 }
 
 /* #lowerInfo >  select child */ 
