@@ -45,7 +45,7 @@ h1, h2, h3, h4{
     grid-area: sidebar;
     
 }
-#sidebar>img:nth-child(1){
+#sidebar-profile>img:nth-child(1) {
     /* clip-path: circle(); */
     border-radius: 50%;
     
@@ -61,7 +61,7 @@ h1, h2, h3, h4{
     margin-left: auto;
     margin-right: auto;
 }
-#sidebar>h3 {
+#sidebar-profile>h3 {
     text-align: center;
     color:white;
     display: block;
@@ -72,7 +72,7 @@ h1, h2, h3, h4{
     margin-inline-end: 0px;
     font-weight: bold;
 }
-#sidebar>p {
+#sidebar-profile>p {
     color: white;
     text-align: center;
     display: block;
@@ -110,7 +110,32 @@ h1, h2, h3, h4{
     margin-bottom: 20px;
     cursor: pointer;
 }
-
+.dashboard-content-flex {
+    display: flex;
+    align-items: center;
+    padding-bottom: 35px;
+    cursor: pointer;
+}
+.dashboard-content img {
+    margin-left: 30px;
+    margin-right: 20px;
+}
+.dashboard-content > #msg-btn> .msg-notification {
+    /* margin-left: %; */
+}
+.msg-notification {
+    position: static;
+    width: 20px;
+    height: 20px;
+    top: 16%;
+    left: 6%;
+    margin-left: 10%;
+    margin-bottom: 7%;
+    border-radius: 50%;
+    background: #DF0000;
+    color: #FFFFFF;
+    text-align: center;
+}
 #upperInfo{
     grid-area: upperInfo;
     
@@ -119,7 +144,13 @@ h1, h2, h3, h4{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr .2fr;
 }
+i {
+    padding:0%;
+    margin: 0%;
+    /* margin-bottom: -10%; */
+}
 .card{
+    display: block;
     background-color:#6B00BC;
     margin: 1.5em;
     margin-top: 0%;;
@@ -128,13 +159,40 @@ h1, h2, h3, h4{
     text-align: left;
     border-radius: 10px;
     height: 120px;
+    color: white;
 }
-.card > h1,p{
+.amount {
+    display: inline;
+    justify-content: space-between;
+    font: normal normal normal 32px/29px Open Sans;
+}
+.amount p,i {
+    display: inline;
+}
+.card > p:nth-child(1) {
     /* color: white; */
     /* font-size:  32px Open-Sans; */
     font-family: "Open Sans", sans-serif;
     /* display:inline-block; */
-    
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.card> div >p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font: normal normal normal 32px/29px Open Sans;
+    font-family: "Open Sans", sans-serif;
+}
+.amount {
+    display: flex;
+    justify-content: space-between;
+    font: normal normal normal 32px/29px Open Sans;
 }
 .card i{
     /* display: inline-block; */
@@ -179,6 +237,7 @@ h1, h2, h3, h4{
 .workshop{
     display: grid;
     grid-template-columns: 1fr 3fr;
+    /* grid-template-rows: 4fr 1fr; */
     grid-template-areas: 
     "workshop-pic workshop-info";
 
@@ -189,6 +248,7 @@ h1, h2, h3, h4{
     padding: 1em;
     border-radius: 8px;
     box-shadow: 0px 5px 10px #01368619;
+    
     /* lightgreen; */
 
 }
@@ -202,6 +262,17 @@ h1, h2, h3, h4{
 }
 .workshop-status{
     display:inline-flex;
+}
+.divider {
+    color: #f8f8f9;
+    /* height: 5px; */
+}
+.workshop-footer {
+    grid-area: workshop-footer;
+    /* border-top: 5px solid #f8f8f9; */
+    display: flex;
+    justify-content: space-around;
+    padding: 34px 0px 34px 0px;
 }
 
 /* #lowerInfo >  select child */ 
