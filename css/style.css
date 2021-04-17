@@ -1,14 +1,42 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans";
 }
 body{
     background: #F8F8F9 0% 0% no-repeat padding-box;
     opacity: 1;
 
 }
+.navbar {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    background: #f8f8f9 0% 0% no-repeat padding-box;
+}
 
+.navbar img {
+    padding-left: 140px;
+    margin-right: 639px;
+}
+.nav-links {
+  display: flex;
+  margin-left: -100px;
+}
+.nav-links p {
+  padding-right: 30px;
+  text-transform: uppercase;
+  font: normal normal bold 12px/15px Montserrat;
+  font-weight: bold;
+}
+.nav-links p span {
+  color: #0062ff;
+}
+.user-group {
+    display: flex;
+    align-items: center;
+    padding-right: 140px;
+}
 #sidebar{
     background: #0B2A5A;
     opacity: 1;
@@ -204,6 +232,9 @@ i {
     /* float:right; */
     /* justify-content: center; */
 }
+.card i{
+    margin-top: 8%;
+}
 
 .myBtn{
     margin: auto;
@@ -265,6 +296,7 @@ i {
 }
 .workshop-info{
     padding: 1em;
+    padding-right: 15em;
     grid-area: workshop-info;
     margin-left: 8%;
 }
@@ -330,9 +362,10 @@ i {
     text-transform: uppercase;
     font: normal normal bold 14px/29px Montserrat;
 }
-.social-media-icon i {
+.social-media-icons i {
     color: #728391;
     width: 20px;
+    margin-top:45%;
 }
 /* #lowerInfo >  select child */ 
 #lowerInfo  img:first-child{
