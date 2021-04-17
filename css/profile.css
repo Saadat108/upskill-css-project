@@ -1,0 +1,133 @@
+@import "./navbar.css";
+@import "./sidebar.css";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  background-color: #f8f8f9;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-areas: "sidebar edit-profile edit-profile edit-profile edit-profile";
+  margin-top: 34px;
+  margin-left: 310px;
+  margin-right: 170px;
+  background: #f8f8f9 0% 0% no-repeat padding-box;
+}
+
+#edit-profile {
+  grid-area: edit-profile;
+  padding-left: 43px;
+}
+#edit-profile h4 {
+  text-align: left;
+  font: normal normal bold 14px Open Sans;
+  letter-spacing: 0px;
+  color: #728391;
+  text-transform: uppercase;
+  opacity: 1;
+  margin-bottom: 20px;
+}
+
+.info {
+  width: 960px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 5px 10px #01368619;
+  border-radius: 10px;
+  text-align: left;
+  font: "Open Sans" 18px;
+  padding: 20px;
+  opacity: 1;
+}
+#edit-profile > .info:nth-child(2){
+  margin-top:20px;
+}
+#edit-profile>.info:nth-child(3) {
+  margin-top: 20px;
+}
+.info input {
+  background: #f8f8f9 0% 0% no-repeat padding-box;
+  border: none;
+  padding: 16px 0px 15px 25px;
+  margin-right: 20px;
+  width: 445px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+#about-me {
+  width: 930px;
+  font: normal normal normal 14px/22px "Open Sans";
+  letter-spacing: 0px;
+  color: #728391;
+  opacity: 1;
+}
+
+
+#adress-input {
+  background: #f8f8f9 0% 0% no-repeat padding-box;
+  border: none;
+  padding: 16px 25px 15px 15px;
+  width: 918px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+
+  font: normal normal normal 14px/22px Open Sans;
+  letter-spacing: 0px;
+  color: #728391;
+  opacity: 1;
+}
+.save-btn {
+  width: 390px;
+  background: #0062ff 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  opacity: 1;
+  text-align: center;
+  font: normal normal normal 14px Montserrat;
+  letter-spacing: 2.8px;
+  color: #ffffff;
+  text-transform: uppercase;
+  opacity: 1;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding: 17px 0px;
+  margin-left: 335px;
+}
+#workshop-btn {
+  cursor: pointer;
+}
+#msg-btn {
+  cursor: pointer;
+}
+
+
+/* MEDIA QUERY FOR THE MAIN PAGE */
+@media only screen and (max-width: 550px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "sidebar"
+      "edit-profile"
+      ;
+    font-size: small;
+  }
+
+  #sidebar img {
+    padding: 0%;
+    margin-top:0%;
+    /* text-align: center; */
+  } 
+  #edit-profile {
+    padding-left: 0;
+  }
+
+}
