@@ -1,0 +1,127 @@
+@import "./navbar.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    background-color: #f8f8f9;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 34px;
+    background: #f8f8f9 0% 0% no-repeat padding-box;
+}
+.wrapper h2 {
+    text-align: center;
+}
+
+.login-gradient {
+    /* background-image: url("../Assets/img/daniel-olah-1Vt21LuLSug-unsplash@2x.png"); */
+    background-image: url("../Assets/img/daniel-olah-1Vt21LuLSug-unsplash.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 960px;
+    height: 880px;
+    color: white;
+    text-align: center;
+    margin-right: 258px;
+}
+
+.login-gradient h1 {
+    text-align: center;
+    padding: 219px 0px 0px 0px;
+    font: normal normal bold 40px/50px Open Sans;
+    letter-spacing: -2px;
+    color: #ffffff;
+    opacity: 1;
+}
+
+.login-gradient p {
+    font: normal normal normal 14px/29px Open Sans;
+    letter-spacing: -0.14px;
+    color: #ffffff;
+    opacity: 1;
+}
+
+.login-gradient > p:nth-child(4) {
+    margin-top: 204px;
+}
+
+.upskill-mail {
+    letter-spacing: -0.18px;
+    color: #00f241;
+    font-weight: bold;
+    
+}
+
+.login-info {
+    text-align: center;
+    padding-top: 110px;
+    margin-right: 258px;
+}
+
+input {
+    width: 445px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #9a9abe;
+    padding: 16px 0px 15px 25px;
+    margin-bottom: 20px;
+}
+
+.forgot-pass {
+    display: flex;
+    justify-content: space-between;
+}
+.forgot-pass a{
+    text-decoration: none;
+    font: normal normal normal 14px/22px Open Sans;
+    letter-spacing: 0px;
+    color: #0062ff;
+    
+}
+
+.forgot-pass > a:nth-child(2) {
+    color: #000000;
+}
+
+.signIn-btn {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 110px;
+    text-align: center;
+    background: #0062ff 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+    padding: 17px 65px;
+    font: normal normal normal 14px/29px Montserrat;
+    letter-spacing: 2.8px;
+    color: #ffffff;
+}
+
+.social-icons {
+    color: #728391;
+    margin-top: 35px;
+    margin-bottom: 40px;
+}
+
+.social-icons>.fb-icon:nth-child(1) {
+    margin-right: 20px;
+}
+
+.agreement {
+    font: normal normal normal 14px/24px Open Sans;
+    letter-spacing: -0.14px;
+    color: #000000;
+}
+
+.agreement span {
+    font: normal normal normal 14px/24px Open Sans;
+    letter-spacing: -0.14px;
+    color: #0062ff;
+}
