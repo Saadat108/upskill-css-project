@@ -1,0 +1,126 @@
+@import "./navbar.css";
+@import "./sidebar.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    background-color: #f8f8f9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    background-color: #f8f8f9;
+}
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: "sidebar workshop-section workshop-section workshop-section workshop-section";
+    margin-top: 34px;
+    margin-left: 310px;
+    margin-right: 170px;
+    background: #f8f8f9 0% 0% no-repeat padding-box;
+}
+
+
+.workshop-section {
+    grid-area: workshop-section;
+    padding-left: 50px;
+}
+
+.history-btns {
+    display: flex;
+    flex-direction: row;
+}
+
+.history-btn {
+    text-align: center;
+    background: #e8ecf1 0% 0% no-repeat padding-box;
+    border-radius: 20px;
+    opacity: 1;
+    width: 280px;
+    margin-right: 60px;
+    font: normal normal normal 14px/40px Montserrat;
+    color: #728391;
+}
+
+#active-history-btn {
+    background: #0062ff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 10px 20px #0062ff4d;
+    color: #ffffff;
+}
+
+.courses {
+    padding-top: 30px;
+}
+
+.row {
+    display: flex;
+}
+
+.course-info {
+    width: 300px;
+    height: 329px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 5px 10px #01368619;
+    border-radius: 10px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.course-info h4 {
+    font: normal normal bold 16px/20px Open Sans;
+    letter-spacing: -0.4px;
+    color: #000000;
+    text-transform: capitalize;
+    opacity: 1;
+    padding-left: 13px;
+    
+}
+
+.course-info p {
+    font: normal normal normal 14px/39px Open Sans;
+    letter-spacing: -0.35px;
+    color: #728391;
+    opacity: 1;
+    padding-left: 13px;
+}
+
+
+
+
+
+/* MEDIA QUERY FOR THE MAIN PAGE */
+@media only screen and (max-width: 550px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: .5fr 1fr ;
+        grid-template-areas:
+            "sidebar"
+            "workshop-section"
+        ;
+        font-size: small;
+    }
+
+    #sidebar img {
+        padding: 0%;
+        margin-top: 0%;
+        /* text-align: center; */
+    }
+
+    .workshop-section {
+        padding-left: 0;
+        margin-top: 5%;
+    }
+    
+}

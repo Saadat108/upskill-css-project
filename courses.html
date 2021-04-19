@@ -4,19 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/profile.css" />
+    <link rel="stylesheet" href="./css/courses.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-    <title>Profile</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <title>courses</title>
   </head>
   <body>
-    <div>
+
       <div class="navbar">
         <div><img src="./Assets/img/logo.PNG" alt="" width="177"></div>
         <div class="nav-links">
@@ -34,8 +42,10 @@
         </div>
       </div>
       
+    <div>
+      
       <div class="wrapper">
-        
+
         <div id="sidebar">
 
             <div id="sidebar-profile">
@@ -109,74 +119,55 @@
 
 
         </div>
+        
+        <div class="workshop-section">
 
-        <div id="edit-profile">
+          <div class="history-btns">
+            <div id="active-history-btn" class="history-btn">UPCOMING</div>
+            <div class="history-btn">PAST</div>
+            <div class="history-btn">ALL</div>
+          </div>
 
-          <div class="info">
-            <h4>Personal info</h4>
+          <div class="courses">
             <div class="row">
-              <div>
-                User Name 
-                <input type="text" placeholder="Md. Faruk Hossain" />
+              <div class="course-info">
+                <img width="300" src="./Assets/img/1.png" alt="" />
+                <h4>User Experience (UX) Design: From Ideation to Validation</h4>
+                <p>10.12.2019 • 06:30pm-08:00pm</p>
               </div>
-              <div>
-                Designation 
-                <input type="text" placeholder="Head of Design" />
+              <div class="course-info">
+                <img width="300" src="./Assets/img/2.png" alt="" />
+                <h4>Bootcamp on Python Programing</h4>
+                <p>10.12.2019 • 06:30pm-08:00pm</p>
+              </div>
+              <div class="course-info">
+                <img width="300" src="./Assets/img/6.png" alt="" />
+                <h4>Starting Up your First Startup</h4>
+                <p>10.12.2019 • 06:30pm-08:00pm</p>
               </div>
             </div>
             <div class="row">
-              <div>
-                Email 
-                <input type="text" placeholder="faruk@gmail.com" />
+              <div class="course-info">
+                <img width="300" src="./Assets/img/4.png" alt="" />
+                <h4> User Experience (UX) Design: From Ideation to Validation</h4>
+                <p>10.12.2019 • 06:30pm-08:00pm</p>
               </div>
-              <div>
-                Phone 
-                <input type="text" placeholder="01711 22 33 44" />
+              <div class="course-info">
+                <img width="300" src="./Assets/img/5.png" alt="" />
+                <h4>Bootcamp on Python Programing</h4>
+                <p>10.12.2019 • 06:30pm-08:00pm</p>
               </div>
-            </div>
-            About Me 
-            <input id="about-me" type="text" placeholder="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"/>
-          </div>
-
-          <div class="info">
-            <h4>Contact information</h4>
-            Adress 
-            <input
-              id="adress-input"
-              type="text"
-              placeholder="House. 123, Road. 5, Banani"
-            />
-            <div class="row">
-              <div>
-                City 
-                <input type="text" placeholder="Dhaka" />
-              </div>
-              <div>
-                Postal Code 
-                <input type="text" placeholder="1209" />
+              <div class="course-info">
+                <img width="300" src="./Assets/img/3.png" alt="" />
+                <h4>Starting Up your First Startup</h4>
+                <p>10.12.2019 • 06:30pm-08:00pm</p>
               </div>
             </div>
           </div>
-
-          <div class="info">
-              <h4>Change password</h4>
-            <div class="row">
-              <div>
-                New password <br />
-                <input type="password" placeholder="************" />
-              </div>
-              <div>
-                Confirm Password <br />
-                <input type="password" placeholder="************" />
-              </div>
-            </div>
-          </div>
-            <div class="save-btn">Save</div>
-          </div>
-          
         </div>
       </div>
     </div>
     <script src="./app.js"></script>
+    
   </body>
 </html>
